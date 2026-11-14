@@ -1,0 +1,1613 @@
+{
+  "Uuid": "77608879-e9b8-4ab7-8233-0253d1de0156",
+  "IsCustomNode": false,
+  "Description": "Worked Example 6: rock bolts on the crown of a mined cavern, placed on a parametric grid.",
+  "Name": "WE6_rock_bolts",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 60.0,
+      "MinimumValue": 6.0,
+      "StepValue": 0.5,
+      "InputValue": 21.0,
+      "Id": "9638d18772a640898824287dddf77085",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ba8391f80f1b414ca9fddd19834485c0",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 8.0,
+      "MinimumValue": 2.0,
+      "StepValue": 0.5,
+      "InputValue": 5.0,
+      "Id": "9b94e0373e364d878f39d6ba8703c377",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c8517fd4041c4ea9a2a0c445e5c2c110",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "MaximumValue": 40,
+      "MinimumValue": 2,
+      "StepValue": 1,
+      "InputValue": 14,
+      "Id": "e19b175d9e274f6599231cbfbc79b713",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fe400ab7256c4fa99c3d79e6cbce7b83",
+          "Name": "",
+          "Description": "Int64",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Integer",
+      "MaximumValue": 20,
+      "MinimumValue": 2,
+      "StepValue": 1,
+      "InputValue": 8,
+      "Id": "13545047307f4b1f81b4ab3c294d0099",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d97b48df50c549039827889820e244ce",
+          "Name": "",
+          "Description": "Int64",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 12.0,
+      "MinimumValue": 4.0,
+      "StepValue": 0.05,
+      "InputValue": 7.25,
+      "Id": "89467516ac504894b1126505de7ead06",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "693b3596d29d45d28d9ce4b6110ba67c",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 60.0,
+      "MinimumValue": 20.0,
+      "StepValue": 0.1,
+      "InputValue": 44.4,
+      "Id": "d77d6ccc13084814846df9458838d122",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "76037d044d674aa598181dc93e0ee6f4",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 12.0,
+      "MinimumValue": 3.0,
+      "StepValue": 0.05,
+      "InputValue": 6.8,
+      "Id": "e2b23b45b8114e62a6831666428b1702",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "72e1eebb30704372ba6a6171a50940c2",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 45.0,
+      "MinimumValue": 10.0,
+      "StepValue": 0.1,
+      "InputValue": 26.9,
+      "Id": "522dfd2262b24e2892c07cd1fd946a3a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6a45eeee216a4dff9c1a28a9b4ae3b13",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 0.6,
+      "MinimumValue": 0.1,
+      "StepValue": 0.05,
+      "InputValue": 0.3,
+      "Id": "40a0626fd4344022996957ae775f10b9",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "cbdd82beb88e401784a51d21b7c95d4f",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 0.05,
+      "MinimumValue": 0.02,
+      "StepValue": 0.001,
+      "InputValue": 0.032,
+      "Id": "5f5e706656de40239c6c8c9e5e158da3",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "404b8613099e4e7ba6820d2b8e617713",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Dynamo works in the length unit of the Revit project (k = 1000 for millimetres)\nk = 1000;",
+      "Id": "09047358a3cf4803b8af341a64383875",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "15cf1eb60bc84f8c91acb609af41b645",
+          "Name": "",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// half-crown of the five-arc profile: crown arc R1 over A1, then shoulder arc R2 over A2,\n// tangent at their junction (Math.Sin and Math.Cos take degrees)\nc2x = (R1 - R2)*Math.Sin(A1);\nc2z = -R1 + (R1 - R2)*Math.Cos(A1);\n// a point on an arc = centre + R*(sin a, cos a), the angle a measured from the vertical\nc1 = Point.ByCoordinates(0, 0, -R1*k);\nc2 = Point.ByCoordinates(c2x*k, 0, c2z*k);\na0 = c1.Translate(0, 0, R1*k);\nam = c1.Translate(R1*Math.Sin(A1/2)*k, 0, R1*Math.Cos(A1/2)*k);\na1 = c1.Translate(R1*Math.Sin(A1)*k, 0, R1*Math.Cos(A1)*k);\nbm = c2.Translate(R2*Math.Sin(A1 + A2/2)*k, 0, R2*Math.Cos(A1 + A2/2)*k);\nb1 = c2.Translate(R2*Math.Sin(A1 + A2)*k, 0, R2*Math.Cos(A1 + A2)*k);\ncrown = PolyCurve.ByJoinedCurves([Arc.ByThreePoints(a0, am, a1), Arc.ByThreePoints(a1, bm, b1)]);\narcLen = crown.Length/k;",
+      "Id": "4820f781bb8142ae8f7bf526781113f3",
+      "Inputs": [
+        {
+          "Id": "197a116f652d42b69d0323ea27317ecd",
+          "Name": "R1",
+          "Description": "R1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ef944473b67d4d3cae306b529b944d02",
+          "Name": "R2",
+          "Description": "R2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "64018700a25b4251b195836e775e4304",
+          "Name": "A1",
+          "Description": "A1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "829b6f5441ae44f88394bcded263783c",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ee7898510d95407da8b310e419374d97",
+          "Name": "A2",
+          "Description": "A2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "8da589183e404f208fd52a70e153e5eb",
+          "Name": "",
+          "Description": "c2x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1ec0e7fe7ee24a2d963dc7ea9b19e7b6",
+          "Name": "",
+          "Description": "c2z",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d2e9c922cdcc4e018c70a0e05dcad5a1",
+          "Name": "",
+          "Description": "c1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6f1a5d58890346da81c7cb56d6bb940d",
+          "Name": "",
+          "Description": "c2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7cbb5e60c88e44368b0ce6e0b41da30a",
+          "Name": "",
+          "Description": "a0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "14df04af220043a996e2443fbcc90ea2",
+          "Name": "",
+          "Description": "am",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d7d28fafb1a9499388dc0fb8bcafd017",
+          "Name": "",
+          "Description": "a1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "08c5e2810800430093a779f4292f0301",
+          "Name": "",
+          "Description": "bm",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b56415440a734f45829f61769a5a4186",
+          "Name": "",
+          "Description": "b1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "030e828cd69e46208774bcf80b9691de",
+          "Name": "",
+          "Description": "crown",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "33476db77b544dfb93b0c35d0482e72f",
+          "Name": "",
+          "Description": "arcLen",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "srf = crown.Extrude(Vector.YAxis(), L*k);\nsgn = srf.NormalAtParameter(0.5, 0.5).Z > 0 ? 1 : -1;\nlining = srf.Thicken(-sgn*tl*k, false);\nouter = srf.Offset(sgn*lb*k);",
+      "Id": "2cd93963f61849afbaf332b7814a1084",
+      "Inputs": [
+        {
+          "Id": "93c567c746e9429e9cf59e82ae59b927",
+          "Name": "crown",
+          "Description": "crown",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4b28a9b1ee76481aa240388292b5f18b",
+          "Name": "L",
+          "Description": "L",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c60f8ec941644df9a982296cde5a7d4e",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a4be2c16587a45fc880f4712e87f7627",
+          "Name": "tl",
+          "Description": "tl",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a0d609952d254b0090f59bab829e91ac",
+          "Name": "lb",
+          "Description": "lb",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7851d7603cfb477d9e71bce6edc6aa29",
+          "Name": "",
+          "Description": "srf",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4068a2c0a19d452aa76bde80242adbd3",
+          "Name": "",
+          "Description": "sgn",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5b790f6a59fe4a5d84d0128710dc22fe",
+          "Name": "",
+          "Description": "lining",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1d96c2f89d564ea3ba2e953e11dbaec5",
+          "Name": "",
+          "Description": "outer",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// (u+1) x (v+1) grid: equal arc length around the crown, equal spacing along the run\nlens = 0..crown.Length..#(nu + 1);\nys = 0..L*k..#(v + 1);\npc = crown.PointAtSegmentLength(lens);\nxs = pc.X;\nzs = pc.Z;\np1 = Flatten(Point.ByCoordinates(xs<1>, ys<2>, zs<1>));\np2 = p1.Translate(srf.NormalAtPoint(p1), sgn*lb*k);\nbolts = Line.ByStartPointEndPoint(p1, p2);\nrods = Cylinder.ByPointsRadius(p1, p2, d/2*k);",
+      "Id": "d28d8033e03b4651a21f849e56e98d3a",
+      "Inputs": [
+        {
+          "Id": "1c795f43946b4cc0b51d71d809c4d274",
+          "Name": "crown",
+          "Description": "crown",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c6bfe70e9b1e4d54a86f8f01f9a379d7",
+          "Name": "nu",
+          "Description": "nu",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "358c2f2a79164f3faaaa13b22ff56831",
+          "Name": "L",
+          "Description": "L",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4d8eeae1c88a4a1886dea95f8d55878b",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bedd4c4bb5a14e03898f0aff29b3c87c",
+          "Name": "v",
+          "Description": "v",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ae609d2c24684eb6b67d9a67431966f7",
+          "Name": "srf",
+          "Description": "srf",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3d0dfaa771de44338c1ef728dae2b85c",
+          "Name": "sgn",
+          "Description": "sgn",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5ee01412e054461280815096a53bbbec",
+          "Name": "lb",
+          "Description": "lb",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b12ec4aa96604294bb3c9a84401f0dea",
+          "Name": "d",
+          "Description": "d",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b5857ed33398411badbd66f304d637b9",
+          "Name": "",
+          "Description": "lens",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "22dabb4894004fcfae03a18cbbe8960e",
+          "Name": "",
+          "Description": "ys",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1863788698bb4614a64a0cc4cb391f97",
+          "Name": "",
+          "Description": "pc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fb9cb5bf8424443fa941f8fd0fbf9db1",
+          "Name": "",
+          "Description": "xs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "267eb9cac49344db87b5cac8bef73d6f",
+          "Name": "",
+          "Description": "zs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8f710bfffca64fcd8273b0ebd28b2e52",
+          "Name": "",
+          "Description": "p1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ff66bceeff2947d795ac64201922133d",
+          "Name": "",
+          "Description": "p2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6f1864dbc16746edb05431aee77f3cf3",
+          "Name": "",
+          "Description": "bolts",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3ea8cc78737c4451869c80ec10805d03",
+          "Name": "",
+          "Description": "rods",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "nBolts = List.Count(bolts);\nsLong = L/v;\nsRad = arcLen/nu;\nlTotal = nBolts*lb;",
+      "Id": "b47d83de29004d5eb91e4d007578510b",
+      "Inputs": [
+        {
+          "Id": "df40e9b8e79a421daa688592dcebe5cd",
+          "Name": "bolts",
+          "Description": "bolts",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b96f7e8a29cf4de49b907596d4ad9767",
+          "Name": "L",
+          "Description": "L",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bbd261eeec2e4711803bcc14ed94175b",
+          "Name": "v",
+          "Description": "v",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "196b64d09722463297e46d19c18916d5",
+          "Name": "arcLen",
+          "Description": "arcLen",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "16245ce263db4812b76060535886093c",
+          "Name": "nu",
+          "Description": "nu",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5d7965361bfa4a19b4b3b137fd11bff0",
+          "Name": "lb",
+          "Description": "lb",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1754995c95464899bbafa358c46ea71c",
+          "Name": "",
+          "Description": "nBolts",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "500ecf53040043f097291821eb5681d1",
+          "Name": "",
+          "Description": "sLong",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5f338423b5f04a55b34fcc7cfd9b836c",
+          "Name": "",
+          "Description": "sRad",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d26cf640ecd0473983986ae6bea0367c",
+          "Name": "",
+          "Description": "lTotal",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "152a5c422a484ec19309f89e4f03dbcd",
+      "Inputs": [
+        {
+          "Id": "eb4644ecb9f64f6ab7eb0f24e5243115",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6b1077410a2f4255997ba7f7ce08a91f",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "5b71613fea0046a081fa5adb93e2555b",
+      "Inputs": [
+        {
+          "Id": "4505df12aa0341ccbb37edc729b3644b",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "20e228708ac14a95b495e932f1c67cb2",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "56f42037996043428feedf4559d4cfde",
+      "Inputs": [
+        {
+          "Id": "e16be191fc544816a98a373c1519121b",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4f087dc3d9e7449c9ccb07a8669e8ec2",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "7d74ecc9ebf74db3b7f58ba75d2d1a80",
+      "Inputs": [
+        {
+          "Id": "1a154698da094219bba34238baf8367d",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1684beb6eb2c4bc4a1a2a5622e9e7d1e",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "35fc478440b340fca6fce607d9d4736b",
+      "Inputs": [
+        {
+          "Id": "67bd41c2b3d745d4a630b067926160b9",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ff75e8cf0e3e4217b46924a71132e3e7",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "cat = Revit.Elements.Category.ByName(\"Generic Models\");\nmat = Revit.Elements.DirectShape.DynamoPreviewMaterial;\ndsLining = Revit.Elements.DirectShape.ByGeometry(lining, cat, mat, \"Primary lining\");\ndsBolts = Revit.Elements.DirectShape.ByGeometry(rods, cat, mat, \"Rock bolt\");",
+      "Id": "e93be36cc0af4861be47b793a2744167",
+      "Inputs": [
+        {
+          "Id": "56eb7e577a7b49ec9534478fe247c43f",
+          "Name": "lining",
+          "Description": "lining",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d64780dad350410eaed724272c75b252",
+          "Name": "rods",
+          "Description": "rods",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "22ae76554f5244489f2067caa1493789",
+          "Name": "",
+          "Description": "cat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c394a45dff654234b743054d762b16c2",
+          "Name": "",
+          "Description": "mat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d24ac552a5334cc6be8ae9342ffa23e7",
+          "Name": "",
+          "Description": "dsLining",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3f6613c80e3144f2ab45b9a2cce67c73",
+          "Name": "",
+          "Description": "dsBolts",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "693b3596d29d45d28d9ce4b6110ba67c",
+      "End": "197a116f652d42b69d0323ea27317ecd",
+      "Id": "2cc3fb2ad73b4a13ab38d8164637b68f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "72e1eebb30704372ba6a6171a50940c2",
+      "End": "ef944473b67d4d3cae306b529b944d02",
+      "Id": "e28061c7bff843ce9b1b3b7001ebd898",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "76037d044d674aa598181dc93e0ee6f4",
+      "End": "64018700a25b4251b195836e775e4304",
+      "Id": "09bbcb11d80549b286ed79d9118cfb6e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "15cf1eb60bc84f8c91acb609af41b645",
+      "End": "829b6f5441ae44f88394bcded263783c",
+      "Id": "33eef27a56b5441faa2444677fd07cff",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6a45eeee216a4dff9c1a28a9b4ae3b13",
+      "End": "ee7898510d95407da8b310e419374d97",
+      "Id": "a3865acf2ef44a6d916bc96d6ab20c3b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "030e828cd69e46208774bcf80b9691de",
+      "End": "93c567c746e9429e9cf59e82ae59b927",
+      "Id": "c5ab50c798ea47cf974daaca37e09554",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ba8391f80f1b414ca9fddd19834485c0",
+      "End": "4b28a9b1ee76481aa240388292b5f18b",
+      "Id": "2ed91c5eedcd4d5c8f6963d0e16bb9a0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "15cf1eb60bc84f8c91acb609af41b645",
+      "End": "c60f8ec941644df9a982296cde5a7d4e",
+      "Id": "b1e2cdbf400d473492137777874d9694",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "cbdd82beb88e401784a51d21b7c95d4f",
+      "End": "a4be2c16587a45fc880f4712e87f7627",
+      "Id": "2f6723c43a2d4902b5b4aa708d07c0f7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c8517fd4041c4ea9a2a0c445e5c2c110",
+      "End": "a0d609952d254b0090f59bab829e91ac",
+      "Id": "88967bef107c48d68fa7f123fc8117c9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "030e828cd69e46208774bcf80b9691de",
+      "End": "1c795f43946b4cc0b51d71d809c4d274",
+      "Id": "ae512aff1295469d88667bbffab73a20",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d97b48df50c549039827889820e244ce",
+      "End": "c6bfe70e9b1e4d54a86f8f01f9a379d7",
+      "Id": "29cfda3887c84492845ccb7fcb0b3450",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ba8391f80f1b414ca9fddd19834485c0",
+      "End": "358c2f2a79164f3faaaa13b22ff56831",
+      "Id": "697b97cb60064964961a5d67345b8c7e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "15cf1eb60bc84f8c91acb609af41b645",
+      "End": "4d8eeae1c88a4a1886dea95f8d55878b",
+      "Id": "0f148ddca61f4d6ba0979a003f9f0f47",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "fe400ab7256c4fa99c3d79e6cbce7b83",
+      "End": "bedd4c4bb5a14e03898f0aff29b3c87c",
+      "Id": "a48cfaabc8fd4c61a8ed0909a68c85ce",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "7851d7603cfb477d9e71bce6edc6aa29",
+      "End": "ae609d2c24684eb6b67d9a67431966f7",
+      "Id": "283090516b12495abe7e57090e001317",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "4068a2c0a19d452aa76bde80242adbd3",
+      "End": "3d0dfaa771de44338c1ef728dae2b85c",
+      "Id": "4e2ba100cf204c069bf0ca3278ba22b1",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c8517fd4041c4ea9a2a0c445e5c2c110",
+      "End": "5ee01412e054461280815096a53bbbec",
+      "Id": "18fe561eecc04db0beb117186bf2dac6",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "404b8613099e4e7ba6820d2b8e617713",
+      "End": "b12ec4aa96604294bb3c9a84401f0dea",
+      "Id": "e7dd31818e1d4dafa65682512aead0f5",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6f1864dbc16746edb05431aee77f3cf3",
+      "End": "df40e9b8e79a421daa688592dcebe5cd",
+      "Id": "25d6ce086e974e44bed94f09403a824f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ba8391f80f1b414ca9fddd19834485c0",
+      "End": "b96f7e8a29cf4de49b907596d4ad9767",
+      "Id": "eeb1e3ed96f740cd90d17c984cd2c544",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "fe400ab7256c4fa99c3d79e6cbce7b83",
+      "End": "bbd261eeec2e4711803bcc14ed94175b",
+      "Id": "8808d653ce5545bd84bf6a175c8ef18d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "33476db77b544dfb93b0c35d0482e72f",
+      "End": "196b64d09722463297e46d19c18916d5",
+      "Id": "c1b12c0826ce4969967f4ce187b38d68",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d97b48df50c549039827889820e244ce",
+      "End": "16245ce263db4812b76060535886093c",
+      "Id": "1b568df6bbe841f391ae555eca8a2995",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "c8517fd4041c4ea9a2a0c445e5c2c110",
+      "End": "5d7965361bfa4a19b4b3b137fd11bff0",
+      "Id": "8f2f77a10c434a23b6cf1ccfc60e6c60",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "33476db77b544dfb93b0c35d0482e72f",
+      "End": "eb4644ecb9f64f6ab7eb0f24e5243115",
+      "Id": "891b2ae16394456d86d66f55fbc82a7f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1754995c95464899bbafa358c46ea71c",
+      "End": "4505df12aa0341ccbb37edc729b3644b",
+      "Id": "f5da4a4aab7347f5be58728923fb59dd",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "500ecf53040043f097291821eb5681d1",
+      "End": "e16be191fc544816a98a373c1519121b",
+      "Id": "6ee247fd589e4ceca2d08a5bc2b7d109",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5f338423b5f04a55b34fcc7cfd9b836c",
+      "End": "1a154698da094219bba34238baf8367d",
+      "Id": "d499bb74459b49f9b2eb74a5c4056f15",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d26cf640ecd0473983986ae6bea0367c",
+      "End": "67bd41c2b3d745d4a630b067926160b9",
+      "Id": "59d3461fab5f4a1ebcfc679ba8146487",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5b790f6a59fe4a5d84d0128710dc22fe",
+      "End": "56eb7e577a7b49ec9534478fe247c43f",
+      "Id": "2a742a1e1514428f9ad02897a745b9c8",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3ea8cc78737c4451869c80ec10805d03",
+      "End": "d64780dad350410eaed724272c75b252",
+      "Id": "973cca18609b4e2f919a01556c79207e",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "3.0.0.0",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -60.0,
+      "EyeY": 60.0,
+      "EyeZ": 60.0,
+      "LookX": 60.0,
+      "LookY": -60.0,
+      "LookZ": -60.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Run length L (m)",
+        "Id": "9638d18772a640898824287dddf77085",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Bolt length lb (m)",
+        "Id": "9b94e0373e364d878f39d6ba8703c377",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 110
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Divisions along the cavern v",
+        "Id": "e19b175d9e274f6599231cbfbc79b713",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 220
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Divisions around the crown u",
+        "Id": "13545047307f4b1f81b4ab3c294d0099",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 330
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Crown radius R1 (m)",
+        "Id": "89467516ac504894b1126505de7ead06",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 440
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Crown angle A1 (deg)",
+        "Id": "d77d6ccc13084814846df9458838d122",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 550
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Shoulder radius R2 (m)",
+        "Id": "e2b23b45b8114e62a6831666428b1702",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 660
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Shoulder angle A2 (deg)",
+        "Id": "522dfd2262b24e2892c07cd1fd946a3a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 770
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Lining thickness tl (m)",
+        "Id": "40a0626fd4344022996957ae775f10b9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 880
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Bolt diameter d (m)",
+        "Id": "5f5e706656de40239c6c8c9e5e158da3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 990
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Units",
+        "Id": "09047358a3cf4803b8af341a64383875",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 700,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Crown curve",
+        "Id": "4820f781bb8142ae8f7bf526781113f3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 700,
+        "Y": 430
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Lining and offset surface",
+        "Id": "2cd93963f61849afbaf332b7814a1084",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2300,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Bolt grid",
+        "Id": "d28d8033e03b4651a21f849e56e98d3a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2300,
+        "Y": 380
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Quantities",
+        "Id": "b47d83de29004d5eb91e4d007578510b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3500,
+        "Y": 380
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Crown half-arc length (m)",
+        "Id": "152a5c422a484ec19309f89e4f03dbcd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4200,
+        "Y": 380
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number of bolts",
+        "Id": "5b71613fea0046a081fa5adb93e2555b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4200,
+        "Y": 560
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Spacing along the cavern (m)",
+        "Id": "56f42037996043428feedf4559d4cfde",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4200,
+        "Y": 740
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Spacing around the crown (m)",
+        "Id": "7d74ecc9ebf74db3b7f58ba75d2d1a80",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4200,
+        "Y": 920
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Total bolt length (m)",
+        "Id": "35fc478440b340fca6fce607d9d4736b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4200,
+        "Y": 1100
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Send to Revit",
+        "Id": "e93be36cc0af4861be47b793a2744167",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3500,
+        "Y": 0
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "9d922dea9cf54b1eb1c579ab4718e5a5",
+        "Title": "Step 1  Inputs: bolt pattern and crown geometry",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "9638d18772a640898824287dddf77085",
+          "9b94e0373e364d878f39d6ba8703c377",
+          "e19b175d9e274f6599231cbfbc79b713",
+          "13545047307f4b1f81b4ab3c294d0099",
+          "89467516ac504894b1126505de7ead06",
+          "d77d6ccc13084814846df9458838d122",
+          "e2b23b45b8114e62a6831666428b1702",
+          "522dfd2262b24e2892c07cd1fd946a3a",
+          "40a0626fd4344022996957ae775f10b9",
+          "5f5e706656de40239c6c8c9e5e158da3"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "1052071771b946aea04b928f71dcd15d",
+        "Title": "Step 2  Units",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "09047358a3cf4803b8af341a64383875"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "97d49dde41894ba4ba8ea367f5487b49",
+        "Title": "Step 3  Crown curve from the profile parameters",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "4820f781bb8142ae8f7bf526781113f3"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fb7c97bbc67548ba93f3230e5afa3195",
+        "Title": "Step 4  Lining surface and its offset by the bolt length",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "2cd93963f61849afbaf332b7814a1084"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "e03545ac832e4f798ffee943dace404a",
+        "Title": "Step 5  Bolt grid: pair each lining point with its offset point",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "d28d8033e03b4651a21f849e56e98d3a"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "568616eb35ea4674b4bf800c98eadc64",
+        "Title": "Step 6  Quantities",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "b47d83de29004d5eb91e4d007578510b",
+          "152a5c422a484ec19309f89e4f03dbcd",
+          "5b71613fea0046a081fa5adb93e2555b",
+          "56f42037996043428feedf4559d4cfde",
+          "7d74ecc9ebf74db3b7f58ba75d2d1a80",
+          "35fc478440b340fca6fce607d9d4736b"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFFFC999"
+      },
+      {
+        "Id": "266c01d5b3dc4a23b0041f410118bb17",
+        "Title": "Step 7  Send the lining and the bolts to Revit",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "e93be36cc0af4861be47b793a2744167"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFFFB8D8"
+      }
+    ],
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 0.45
+  }
+}
