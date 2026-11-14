@@ -1,0 +1,1923 @@
+{
+  "Uuid": "b491a39a-9a06-4649-9e58-58d6ec206d8e",
+  "IsCustomNode": false,
+  "Description": "Worked Example 5: shafts, cross-passages and cavern runs of a mined station generated from parameters.",
+  "Name": "WE5_station_assembly",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 250.0,
+      "MinimumValue": 100.0,
+      "StepValue": 1.0,
+      "InputValue": 190.0,
+      "Id": "baa548e73cf741749eb1124fa0190db5",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "deaf1da1004a404c8752ff1c00f52b3b",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 60.0,
+      "MinimumValue": 20.0,
+      "StepValue": 1.0,
+      "InputValue": 40.0,
+      "Id": "d6dbd094a1e54053a256bb3af3f58b7e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1291732c40744a5892d2f70caebf9d08",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 60.0,
+      "MinimumValue": 5.0,
+      "StepValue": 1.0,
+      "InputValue": 14.0,
+      "Id": "b8b1f8f8ae4641808f978a1de42eb969",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "656d4bacd1b24992a5446545ba50a85b",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 130.0,
+      "MinimumValue": 70.0,
+      "StepValue": 1.0,
+      "InputValue": 100.0,
+      "Id": "1d9cacdd39a24a4ea2fa213ec89e7023",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5375c273dc1e4e2cafffaa9818040efe",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 185.0,
+      "MinimumValue": 140.0,
+      "StepValue": 1.0,
+      "InputValue": 169.0,
+      "Id": "646b3a6484d5446588e2f479151b5ae6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "78e7f35c471244baa2f59b386db0b0ab",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 2.0,
+      "MinimumValue": 0.5,
+      "StepValue": 0.1,
+      "InputValue": 1.0,
+      "Id": "0b109855338847c38fb2da5ad14bc05a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2ebf7824e46f4408bac989dbf698ec35",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// one entry per shaft: passage (0 = P1, 1 = P2, 2 = P3),\n// side (+1 west, -1 east), length, width and height (m)\npIdx = [0, 0, 1, 2];\nside = [1, -1, 1, 1];\nLs = [32, 40, 32, 50];\nWs = [10, 10, 10, 15];\nhs = [30, 30, 30, 30];",
+      "Id": "0cbecb32347146f5b08c758b60bae5ae",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3a1dca7affdc451883965b5b5b0b9d57",
+          "Name": "",
+          "Description": "pIdx",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "af30e6f7d65040688cc0ea92ec9494b8",
+          "Name": "",
+          "Description": "side",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "27a512731e44469abd300ec6c8425871",
+          "Name": "",
+          "Description": "Ls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "62102364736d472583a91f1342656443",
+          "Name": "",
+          "Description": "Ws",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f63ae8ce59184feab6b7fcb947b24d9b",
+          "Name": "",
+          "Description": "hs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// Dynamo works in the length unit of the Revit project.\n// For a metric project in millimetres, k = 1000 converts metres to millimetres.\nk = 1000;",
+      "Id": "7afe76f66beb40779e4fc7eb528933a1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "072fbb25a7d34af7a156d30709b26414",
+          "Name": "",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "ch = [P1, P2, P3];\npEnd = Point.ByCoordinates(Lc*k, 0, 0);\nalign = Line.ByStartPointEndPoint(Point.Origin(), pEnd);\npA = Point.ByCoordinates(ch*k, -Lp/2*k, 0);\npB = Point.ByCoordinates(ch*k, Lp/2*k, 0);\npassage = Line.ByStartPointEndPoint(pA, pB);",
+      "Id": "d5cd3f3cb05e4c6588c1d2aefb62e978",
+      "Inputs": [
+        {
+          "Id": "47cf0d0b44404b798d84efa36db2a251",
+          "Name": "P1",
+          "Description": "P1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4d6ab256c127407598473b49f412c7a0",
+          "Name": "P2",
+          "Description": "P2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d37eba8b12484e1daf717ac14455661d",
+          "Name": "P3",
+          "Description": "P3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9b448b94c74c404f9630a0fdc272d4c0",
+          "Name": "Lc",
+          "Description": "Lc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a425be12fb6444658feb2adac4948717",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c963a647034c4f0bb914f14bdfa504ab",
+          "Name": "Lp",
+          "Description": "Lp",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e78379625789416f85c41a12616ee1a9",
+          "Name": "",
+          "Description": "ch",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c091691d8e7e4dc2bc768b5242434636",
+          "Name": "",
+          "Description": "pEnd",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e84c836fcd6e439bb87819ad0b68e74d",
+          "Name": "",
+          "Description": "align",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "68f4574ec1874778bc390c36a432b33c",
+          "Name": "",
+          "Description": "pA",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7fec8d5772084addabd23dfc61e9e10f",
+          "Name": "",
+          "Description": "pB",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5f6f6346d6d64644bd8db26496634c69",
+          "Name": "",
+          "Description": "passage",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// the shaft sits at the end of its passage, half the passage length from the alignment,\n// its width runs along the alignment and its length away from it\nx0 = (ch[pIdx] - Ws/2)*k;\nx1 = (ch[pIdx] + Ws/2)*k;\nyA = side*Lp/2*k;\nyB = side*(Lp/2 + Ls)*k;\ny0 = Math.Min(yA, yB);\ny1 = Math.Max(yA, yB);\n// outer box minus inner box gives the walls, the inner box is taller so the top is open\nlo = Point.ByCoordinates(x0, y0, 0);\nhi = Point.ByCoordinates(x1, y1, hs*k);\nouter = Cuboid.ByCorners(lo, hi);\nloIn = Point.ByCoordinates(x0 + t*k, y0 + t*k, -k);\nhiIn = Point.ByCoordinates(x1 - t*k, y1 - t*k, hs*k + k);\ninner = Cuboid.ByCorners(loIn, hiIn);\nwalls = Solid.Difference(outer, inner);\n// base slab under the whole footprint\nloB = Point.ByCoordinates(x0, y0, -t*k);\nhiB = Point.ByCoordinates(x1, y1, 0);\nbase = Cuboid.ByCorners(loB, hiB);",
+      "Id": "ba61dfa432bb46a0889ca73c02d725a9",
+      "Inputs": [
+        {
+          "Id": "1d5109f5bca54ef397a7343f95fb410b",
+          "Name": "ch",
+          "Description": "ch",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6d6dd9cfb59d4e958c19cddfeff16f26",
+          "Name": "pIdx",
+          "Description": "pIdx",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7f0a7f06ce2e469d88d1ba1f24368d8c",
+          "Name": "Ws",
+          "Description": "Ws",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1795ad23c9884d308ed1de5b598e61b1",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "85cb7d4138a1407dbdcf57da429cebb4",
+          "Name": "side",
+          "Description": "side",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7a5decb2306f4f70be0b2298808ee4d9",
+          "Name": "Lp",
+          "Description": "Lp",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8ed012293cf34381a6b347ec43ec7183",
+          "Name": "Ls",
+          "Description": "Ls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0f00443366ac4e599b1ea933a0bf1664",
+          "Name": "hs",
+          "Description": "hs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "326d0be51864470ba2b335676a70dfe8",
+          "Name": "t",
+          "Description": "t",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1a5066f825b145ccae354b958a9532ae",
+          "Name": "",
+          "Description": "x0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d4bd6ecbf46342ffbda3057ef6faf58d",
+          "Name": "",
+          "Description": "x1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c9fb24aa800e403e810ac8a3df8d0c5a",
+          "Name": "",
+          "Description": "yA",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "15523838fdd648cc93986a637da7ef63",
+          "Name": "",
+          "Description": "yB",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "522d39e90ce74477b0fabda224eb8adb",
+          "Name": "",
+          "Description": "y0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "40b0ebee00bb4fa887ae7091838f6587",
+          "Name": "",
+          "Description": "y1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "766d0f8d8b334f6f99541061251c0810",
+          "Name": "",
+          "Description": "lo",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e40e4d1b70fa465bba67a61c4da81390",
+          "Name": "",
+          "Description": "hi",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b73fbe4309be4035b747b945b2f730c0",
+          "Name": "",
+          "Description": "outer",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b296422adbe341ddbe4d13eb13622a39",
+          "Name": "",
+          "Description": "loIn",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9e84ce9924d348d39828dbba84bdbdee",
+          "Name": "",
+          "Description": "hiIn",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d53ef02f41454efcb7ddc3c4d4fc219a",
+          "Name": "",
+          "Description": "inner",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cbf12c9362b9473babebb8a4e4bd452b",
+          "Name": "",
+          "Description": "walls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "20f1f76856da4f1984207992eb0d5a28",
+          "Name": "",
+          "Description": "loB",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "72443c42cd174e44b8021f6a777382d9",
+          "Name": "",
+          "Description": "hiB",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6a74a048f56f43988cd16d8f95698a17",
+          "Name": "",
+          "Description": "base",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// arched passage profile, 8 m wide with 4 m walls, extruded across the cavern\nwa = 8;\nhw = 4;\nq1 = Point.ByCoordinates(-wa/2*k, 0, 0);\nq2 = Point.ByCoordinates(wa/2*k, 0, 0);\nq3 = Point.ByCoordinates(wa/2*k, 0, hw*k);\nq4 = Point.ByCoordinates(0, 0, (hw + wa/2)*k);\nq5 = Point.ByCoordinates(-wa/2*k, 0, hw*k);\nedges = [Line.ByStartPointEndPoint(q1, q2),\n         Line.ByStartPointEndPoint(q2, q3),\n         Arc.ByThreePoints(q3, q4, q5),\n         Line.ByStartPointEndPoint(q5, q1)];\nprof = PolyCurve.ByJoinedCurves(edges);\nstart = prof.Translate(ch*k, -Lp/2*k, 0);\nadit = start.ExtrudeAsSolid(Vector.YAxis(), Lp*k);",
+      "Id": "eda8dbd80f1747359804f6b1106fc0c7",
+      "Inputs": [
+        {
+          "Id": "cb9cf4ddcd9844559553df51b70c474c",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0cad42f5f14e42fe8ef860a6e7bd6e97",
+          "Name": "ch",
+          "Description": "ch",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2b69a44597954160b08de2286702cec2",
+          "Name": "Lp",
+          "Description": "Lp",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "47a8c8ed8aec4c8a8cea38fd6b0ea17e",
+          "Name": "",
+          "Description": "wa",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "63f8f030c2e94057b8c4d39e550c1bff",
+          "Name": "",
+          "Description": "hw",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3c40080af1be4a919b17af3d1af228b4",
+          "Name": "",
+          "Description": "q1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5bf8fbb06ad744588e236bc815352048",
+          "Name": "",
+          "Description": "q2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "41f0676f2979405e899eff0cff79bb3f",
+          "Name": "",
+          "Description": "q3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "96cbb0e11d4740cb8bb1ff746f16eff3",
+          "Name": "",
+          "Description": "q4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "204b19e48eb1465393903441851289b8",
+          "Name": "",
+          "Description": "q5",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "da325fc6f1204f209a1a8b72a3f26b75",
+          "Name": "",
+          "Description": "edges",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c85b4b0f88a546968812e5b1afb1b98c",
+          "Name": "",
+          "Description": "prof",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "65684b145a254888884367aa29a843ca",
+          "Name": "",
+          "Description": "start",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "be794d626fb54cec9ab6bcdd30a7b4bb",
+          "Name": "",
+          "Description": "adit",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// the cavern is broken at the three passages into four runs\nbrk = [0, P1, P2, P3, Lc];\ns0 = brk[0..3];\nrunLen = brk[1..4] - s0;\nwc = 15;\nhc = 7;\nr1 = Point.ByCoordinates(0, -wc/2*k, 0);\nr2 = Point.ByCoordinates(0, wc/2*k, 0);\nr3 = Point.ByCoordinates(0, wc/2*k, hc*k);\nr4 = Point.ByCoordinates(0, 0, (hc + wc/2)*k);\nr5 = Point.ByCoordinates(0, -wc/2*k, hc*k);\ncedges = [Line.ByStartPointEndPoint(r1, r2),\n          Line.ByStartPointEndPoint(r2, r3),\n          Arc.ByThreePoints(r3, r4, r5),\n          Line.ByStartPointEndPoint(r5, r1)];\ncprof = PolyCurve.ByJoinedCurves(cedges);\nruns = cprof.Translate(s0*k, 0, 0).ExtrudeAsSolid(Vector.XAxis(), runLen*k);",
+      "Id": "39315390dd514221bbea5263fcd5bf43",
+      "Inputs": [
+        {
+          "Id": "75e4c4124dd241cb82f112e5cffee028",
+          "Name": "P1",
+          "Description": "P1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1fcbf73761f04e72b7f0d23c886efddf",
+          "Name": "P2",
+          "Description": "P2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3461d9ed5639445686ea899e89bdda05",
+          "Name": "P3",
+          "Description": "P3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "62c264c6cb9a4668bada65dd4ea3d6eb",
+          "Name": "Lc",
+          "Description": "Lc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ff2faa7cf9aa4d0998daa58e1cdc0f04",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b6c5e6cc32ad4cbfa4d3432d7ca07a32",
+          "Name": "",
+          "Description": "brk",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f9f60117efb942058ca58dc7a342de16",
+          "Name": "",
+          "Description": "s0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e65b9664f64e46e8969faf0862b808fc",
+          "Name": "",
+          "Description": "runLen",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5fb16e245ef74d0bb38f4d73b9163ee1",
+          "Name": "",
+          "Description": "wc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "48f1dd2bae554baebe92309d23ff2c2e",
+          "Name": "",
+          "Description": "hc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "16d40969bece4a7caa603e0c38afee81",
+          "Name": "",
+          "Description": "r1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b75e517f1a2e4a478cbc25eca1f4c0fb",
+          "Name": "",
+          "Description": "r2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "44f49eb128164606b3461286d07b5150",
+          "Name": "",
+          "Description": "r3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "89776ff236d74602aed46ea536030168",
+          "Name": "",
+          "Description": "r4",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bbd62c484fb5462aa6e53a46a490cb3a",
+          "Name": "",
+          "Description": "r5",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6d97e34c500143fca9bdd8fe62e1d13c",
+          "Name": "",
+          "Description": "cedges",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "76c3ace7b2cc40febd9e0435b285178d",
+          "Name": "",
+          "Description": "cprof",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9d39a6880b9a49a79aeabd859ce9fa15",
+          "Name": "",
+          "Description": "runs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "// m3, from the same parameters that drive the geometry\nVwall = hs*(Ls*Ws - (Ls - 2*t)*(Ws - 2*t));\nVbase = Ls*Ws*t;\nVexc = Ls*Ws*hs;\nVcheck = walls.Volume/(k*k*k);\ntotals = [Math.Sum(Vwall), Math.Sum(Vbase), Math.Sum(Vexc)];\nnInst = 7*List.Count(runLen);",
+      "Id": "27624019a98545348434c2cfeed9ebe7",
+      "Inputs": [
+        {
+          "Id": "e042affa9bbd4c58bf06ae496166e009",
+          "Name": "hs",
+          "Description": "hs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "38b9af6fb6d544dba5dcfc8a4a0a75a4",
+          "Name": "Ls",
+          "Description": "Ls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "31b0758cf85747d5926cc6c413e861a6",
+          "Name": "Ws",
+          "Description": "Ws",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "188d8ff3cbf344f9b9313adefa26dd32",
+          "Name": "t",
+          "Description": "t",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "98995afe3c574b99af51504f9ea76501",
+          "Name": "walls",
+          "Description": "walls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7b0b14302d754c74a393025ed465a78e",
+          "Name": "k",
+          "Description": "k",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ef6dc2826d8c4ddd9d01af6be666e2be",
+          "Name": "runLen",
+          "Description": "runLen",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ca2d60f86d60420bada03675f0222551",
+          "Name": "",
+          "Description": "Vwall",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6abbcb04de5f44fc838d49852514ed7c",
+          "Name": "",
+          "Description": "Vbase",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "44527b2027774642ba63defbaa950edc",
+          "Name": "",
+          "Description": "Vexc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "06f32744f47c4c7f97e76195fa619cd0",
+          "Name": "",
+          "Description": "Vcheck",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "efc0ae9604814b9d89450f6981908d1d",
+          "Name": "",
+          "Description": "totals",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "095ebf1f569e4ad488cdb57b503e4ece",
+          "Name": "",
+          "Description": "nInst",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "b8620cf758ea4321bd3662c526b2cca4",
+      "Inputs": [
+        {
+          "Id": "8645cad6ecad4c28ac5329339f8d58bd",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1af2de56cf944bb0ba8b5cf80d07d94c",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "9ce019034a394a2f80de845122d0c847",
+      "Inputs": [
+        {
+          "Id": "2e8de857d8f14f32b2cd21ccd85b2d0f",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cb3b1fadd9954c1dbe7c25d3a9f0ac36",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "89d7b8714ede4bca9f2525f6cff2335e",
+      "Inputs": [
+        {
+          "Id": "c1b34164e35949219b04c610cc22e545",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "97c6207abb3e44b9a37790eed8d18523",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "983c2684e49f441c8cd6153db549fb4b",
+      "Inputs": [
+        {
+          "Id": "3dbbd94be4554363a758444cde698be4",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4ab2899986e14390879c6254532b7ea8",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "1fd305324bba41508fd72bcfeecb985c",
+      "Inputs": [
+        {
+          "Id": "263fdf9d776e46368d1b24469d3b2da6",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "04db60a34ebc46269cb894862e886af3",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "cat = Revit.Elements.Category.ByName(\"Generic Models\");\nmat = Revit.Elements.DirectShape.DynamoPreviewMaterial;\ndsWalls = Revit.Elements.DirectShape.ByGeometry(walls, cat, mat, \"Shaft walls\");\ndsBase = Revit.Elements.DirectShape.ByGeometry(base, cat, mat, \"Shaft base\");\ndsAdit = Revit.Elements.DirectShape.ByGeometry(adit, cat, mat, \"Cross-passage\");\ndsRuns = Revit.Elements.DirectShape.ByGeometry(runs, cat, mat, \"Cavern run\");",
+      "Id": "4fe4ae5a62cc42b09ffc551e7adc4002",
+      "Inputs": [
+        {
+          "Id": "d8fcaf2e9fb4423fab56c4b2abd3188c",
+          "Name": "walls",
+          "Description": "walls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "57ecca7cd472453bb4ace5029153f3d3",
+          "Name": "base",
+          "Description": "base",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ba1f52053ed74af8b6094d3254f66579",
+          "Name": "adit",
+          "Description": "adit",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2b7f2b6992f84f97bd7e6e59a4e050d0",
+          "Name": "runs",
+          "Description": "runs",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b7fb65a76f0243db97ebf770bcacdce8",
+          "Name": "",
+          "Description": "cat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dde006dc9aec41e28a783958a3af62f4",
+          "Name": "",
+          "Description": "mat",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5ce6dc28d387442492495d92b2b3ea33",
+          "Name": "",
+          "Description": "dsWalls",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c67f5bc9053b49ffa1055dff59f01d90",
+          "Name": "",
+          "Description": "dsBase",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d333466a79ea4bf8a6035bf011706071",
+          "Name": "",
+          "Description": "dsAdit",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "fa9e6168c90949a39f732d945993f5eb",
+          "Name": "",
+          "Description": "dsRuns",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "656d4bacd1b24992a5446545ba50a85b",
+      "End": "47cf0d0b44404b798d84efa36db2a251",
+      "Id": "4c9698cd24d94475bb93aaeabb77b309",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5375c273dc1e4e2cafffaa9818040efe",
+      "End": "4d6ab256c127407598473b49f412c7a0",
+      "Id": "30a4e818cde54a5baf05999c3815578f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "78e7f35c471244baa2f59b386db0b0ab",
+      "End": "d37eba8b12484e1daf717ac14455661d",
+      "Id": "f062070568204f00b0a0380588ac274c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "deaf1da1004a404c8752ff1c00f52b3b",
+      "End": "9b448b94c74c404f9630a0fdc272d4c0",
+      "Id": "c5383356ef55434cab11613f42d66c24",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "072fbb25a7d34af7a156d30709b26414",
+      "End": "a425be12fb6444658feb2adac4948717",
+      "Id": "dce1f3ebce4940ab834913542da6f715",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1291732c40744a5892d2f70caebf9d08",
+      "End": "c963a647034c4f0bb914f14bdfa504ab",
+      "Id": "f4643ef598cb4b14aa44591e7140ce79",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e78379625789416f85c41a12616ee1a9",
+      "End": "1d5109f5bca54ef397a7343f95fb410b",
+      "Id": "70c9e3d7fa8a44b593f805ada5092fd3",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3a1dca7affdc451883965b5b5b0b9d57",
+      "End": "6d6dd9cfb59d4e958c19cddfeff16f26",
+      "Id": "1e0d4328163d49adb71b668503d6a450",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "62102364736d472583a91f1342656443",
+      "End": "7f0a7f06ce2e469d88d1ba1f24368d8c",
+      "Id": "e703d267fb644461b18df16a80c52c29",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "072fbb25a7d34af7a156d30709b26414",
+      "End": "1795ad23c9884d308ed1de5b598e61b1",
+      "Id": "ba5e943b8b4844bb92ccb5d6e9727bf4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "af30e6f7d65040688cc0ea92ec9494b8",
+      "End": "85cb7d4138a1407dbdcf57da429cebb4",
+      "Id": "8bba202000704bae8fccd64faacb08da",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1291732c40744a5892d2f70caebf9d08",
+      "End": "7a5decb2306f4f70be0b2298808ee4d9",
+      "Id": "619c470adf884942a4d2fd9e300febf5",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "27a512731e44469abd300ec6c8425871",
+      "End": "8ed012293cf34381a6b347ec43ec7183",
+      "Id": "09fcdfcaca604bf3be02763ec4cae981",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f63ae8ce59184feab6b7fcb947b24d9b",
+      "End": "0f00443366ac4e599b1ea933a0bf1664",
+      "Id": "4edd08bb4ca64b18a9b12e900064c759",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2ebf7824e46f4408bac989dbf698ec35",
+      "End": "326d0be51864470ba2b335676a70dfe8",
+      "Id": "efa58a1e3b354ccc97d44a22d96f1ae4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "072fbb25a7d34af7a156d30709b26414",
+      "End": "cb9cf4ddcd9844559553df51b70c474c",
+      "Id": "2de0b9d49bd54969916cdcba6414eb6a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e78379625789416f85c41a12616ee1a9",
+      "End": "0cad42f5f14e42fe8ef860a6e7bd6e97",
+      "Id": "6d79e3c85d314db8878aeb7d9aa2486c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1291732c40744a5892d2f70caebf9d08",
+      "End": "2b69a44597954160b08de2286702cec2",
+      "Id": "abdbd7de3fce4ab38eea3edd977dc24e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "656d4bacd1b24992a5446545ba50a85b",
+      "End": "75e4c4124dd241cb82f112e5cffee028",
+      "Id": "a0f290dffdff469f9f4ba7ac8142fc2f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "5375c273dc1e4e2cafffaa9818040efe",
+      "End": "1fcbf73761f04e72b7f0d23c886efddf",
+      "Id": "1fa34bc791ed4c5491a7103995fcc8df",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "78e7f35c471244baa2f59b386db0b0ab",
+      "End": "3461d9ed5639445686ea899e89bdda05",
+      "Id": "0bd11b0a206744499094aab3cd3ad522",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "deaf1da1004a404c8752ff1c00f52b3b",
+      "End": "62c264c6cb9a4668bada65dd4ea3d6eb",
+      "Id": "b36ddefc2aa345138b0243b019fb7c6d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "072fbb25a7d34af7a156d30709b26414",
+      "End": "ff2faa7cf9aa4d0998daa58e1cdc0f04",
+      "Id": "ca218ca4b39848e1a1953daca386a85b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f63ae8ce59184feab6b7fcb947b24d9b",
+      "End": "e042affa9bbd4c58bf06ae496166e009",
+      "Id": "aac5a7266f2e4381bfd803850becaff2",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "27a512731e44469abd300ec6c8425871",
+      "End": "38b9af6fb6d544dba5dcfc8a4a0a75a4",
+      "Id": "1f1f603198e644d9b90c4ece2e08f1c0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "62102364736d472583a91f1342656443",
+      "End": "31b0758cf85747d5926cc6c413e861a6",
+      "Id": "c17207ca7afb474696a1030020b0f0af",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2ebf7824e46f4408bac989dbf698ec35",
+      "End": "188d8ff3cbf344f9b9313adefa26dd32",
+      "Id": "ad1fba75548c4298ab515b94693ae52f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "cbf12c9362b9473babebb8a4e4bd452b",
+      "End": "98995afe3c574b99af51504f9ea76501",
+      "Id": "471b93024bd2419eb830800879a382b6",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "072fbb25a7d34af7a156d30709b26414",
+      "End": "7b0b14302d754c74a393025ed465a78e",
+      "Id": "712a071655aa4b898805db5a12a8a289",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e65b9664f64e46e8969faf0862b808fc",
+      "End": "ef6dc2826d8c4ddd9d01af6be666e2be",
+      "Id": "2702b90e08264ce9867c703559253125",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ca2d60f86d60420bada03675f0222551",
+      "End": "8645cad6ecad4c28ac5329339f8d58bd",
+      "Id": "4f74393f6559467db74dd75cd75cf2a4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "06f32744f47c4c7f97e76195fa619cd0",
+      "End": "2e8de857d8f14f32b2cd21ccd85b2d0f",
+      "Id": "938f6b0bde1748b9b50d1c9f682d0305",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "efc0ae9604814b9d89450f6981908d1d",
+      "End": "c1b34164e35949219b04c610cc22e545",
+      "Id": "4c89a22b96904397b9966fa8bab4d937",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e65b9664f64e46e8969faf0862b808fc",
+      "End": "3dbbd94be4554363a758444cde698be4",
+      "Id": "d69b19eec646482fb3e58f65a2a2cd5b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "095ebf1f569e4ad488cdb57b503e4ece",
+      "End": "263fdf9d776e46368d1b24469d3b2da6",
+      "Id": "0ba3d1cd0aab4fcf830d3394a114b059",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "cbf12c9362b9473babebb8a4e4bd452b",
+      "End": "d8fcaf2e9fb4423fab56c4b2abd3188c",
+      "Id": "432c1bf5242c4266ac65902e75477a10",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6a74a048f56f43988cd16d8f95698a17",
+      "End": "57ecca7cd472453bb4ace5029153f3d3",
+      "Id": "0a9fa5fcc57a4d5088bfac6f48833c47",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "be794d626fb54cec9ab6bcdd30a7b4bb",
+      "End": "ba1f52053ed74af8b6094d3254f66579",
+      "Id": "a41d2ecdf0f4410e9f0cc0abc3578fcf",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9d39a6880b9a49a79aeabd859ce9fa15",
+      "End": "2b7f2b6992f84f97bd7e6e59a4e050d0",
+      "Id": "3d2134231d1f41e49bfb1fb04c5a96a3",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "3.0.0.0",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -60.0,
+      "EyeY": 60.0,
+      "EyeZ": 60.0,
+      "LookX": 60.0,
+      "LookY": -60.0,
+      "LookZ": -60.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Cavern length Lc (m)",
+        "Id": "baa548e73cf741749eb1124fa0190db5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Cross-passage length Lp (m)",
+        "Id": "d6dbd094a1e54053a256bb3af3f58b7e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 110
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Chainage of passage P1 (m)",
+        "Id": "b8b1f8f8ae4641808f978a1de42eb969",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 220
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Chainage of passage P2 (m)",
+        "Id": "1d9cacdd39a24a4ea2fa213ec89e7023",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 330
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Chainage of passage P3 (m)",
+        "Id": "646b3a6484d5446588e2f479151b5ae6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 440
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Shaft wall thickness t (m)",
+        "Id": "0b109855338847c38fb2da5ad14bc05a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 550
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Shaft table",
+        "Id": "0cbecb32347146f5b08c758b60bae5ae",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 0,
+        "Y": 680
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Units",
+        "Id": "7afe76f66beb40779e4fc7eb528933a1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 700,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Alignment and passages",
+        "Id": "d5cd3f3cb05e4c6588c1d2aefb62e978",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 700,
+        "Y": 430
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Shaft boxes",
+        "Id": "ba61dfa432bb46a0889ca73c02d725a9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1700,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Cross-passages",
+        "Id": "eda8dbd80f1747359804f6b1106fc0c7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1700,
+        "Y": 700
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Cavern runs",
+        "Id": "39315390dd514221bbea5263fcd5bf43",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3000,
+        "Y": 0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Quantities",
+        "Id": "27624019a98545348434c2cfeed9ebe7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3000,
+        "Y": 640
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Wall concrete per shaft (m3)",
+        "Id": "b8620cf758ea4321bd3662c526b2cca4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 600
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Check: solid volume of walls (m3)",
+        "Id": "9ce019034a394a2f80de845122d0c847",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 840
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Totals: walls, bases, excavation (m3)",
+        "Id": "89d7b8714ede4bca9f2525f6cff2335e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 1080
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Cavern run lengths (m)",
+        "Id": "983c2684e49f441c8cd6153db549fb4b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 1300
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Family instances, 7 per run",
+        "Id": "1fd305324bba41508fd72bcfeecb985c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 1540
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Send to Revit",
+        "Id": "4fe4ae5a62cc42b09ffc551e7adc4002",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4300,
+        "Y": 0
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "0bf16068d0594e80ab39a487c864c083",
+        "Title": "Step 1  Inputs (m): edit the sliders and the shaft table",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "baa548e73cf741749eb1124fa0190db5",
+          "d6dbd094a1e54053a256bb3af3f58b7e",
+          "b8b1f8f8ae4641808f978a1de42eb969",
+          "1d9cacdd39a24a4ea2fa213ec89e7023",
+          "646b3a6484d5446588e2f479151b5ae6",
+          "0b109855338847c38fb2da5ad14bc05a",
+          "0cbecb32347146f5b08c758b60bae5ae"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "ea5faf141b11470aa07b2e7b78c96857",
+        "Title": "Step 2  Units",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "7afe76f66beb40779e4fc7eb528933a1"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFB9F9E1"
+      },
+      {
+        "Id": "dee9f67e810949d7a632398724b58bd0",
+        "Title": "Step 3  Station alignment and passage centrelines",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "d5cd3f3cb05e4c6588c1d2aefb62e978"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "fa0e43c19ab24191b17d62c5cfc678f2",
+        "Title": "Step 4  Shaft boxes: open-top walls on a base slab",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "ba61dfa432bb46a0889ca73c02d725a9"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ab6c1be1992f4183b4eecca8938ce23d",
+        "Title": "Step 5  Cross-passages (adits)",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "eda8dbd80f1747359804f6b1106fc0c7"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "c819e576bcd646b6926e82215bf35350",
+        "Title": "Step 6  Cavern runs between the passages",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "39315390dd514221bbea5263fcd5bf43"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "615e447527d14c6b9d6cff031e68c7e8",
+        "Title": "Step 7  Quantities",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "27624019a98545348434c2cfeed9ebe7",
+          "b8620cf758ea4321bd3662c526b2cca4",
+          "9ce019034a394a2f80de845122d0c847",
+          "89d7b8714ede4bca9f2525f6cff2335e",
+          "983c2684e49f441c8cd6153db549fb4b",
+          "1fd305324bba41508fd72bcfeecb985c"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFFFC999"
+      },
+      {
+        "Id": "8e1570a9078047d38c8d23a05817b837",
+        "Title": "Step 8  Send the geometry to Revit as DirectShapes",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "4fe4ae5a62cc42b09ffc551e7adc4002"
+        ],
+        "HasNestedGroups": false,
+        "Left": 0,
+        "Top": 0,
+        "Width": 0,
+        "Height": 0,
+        "FontSize": 30.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 0,
+        "InitialHeight": 0,
+        "TextblockHeight": 0,
+        "Background": "#FFFFB8D8"
+      }
+    ],
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 0.45
+  }
+}
